@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/ShinuRaju/DS_App.git/static/css/main.5b70c0be.css",
+    "main.js": "/ShinuRaju/DS_App.git/static/js/main.060419dd.js",
+    "static/js/453.3d29fab8.chunk.js": "/ShinuRaju/DS_App.git/static/js/453.3d29fab8.chunk.js",
+    "index.html": "/ShinuRaju/DS_App.git/index.html",
+    "main.5b70c0be.css.map": "/ShinuRaju/DS_App.git/static/css/main.5b70c0be.css.map",
+    "main.060419dd.js.map": "/ShinuRaju/DS_App.git/static/js/main.060419dd.js.map",
+    "453.3d29fab8.chunk.js.map": "/ShinuRaju/DS_App.git/static/js/453.3d29fab8.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.5b70c0be.css",
+    "static/js/main.060419dd.js"
+  ]
+}
