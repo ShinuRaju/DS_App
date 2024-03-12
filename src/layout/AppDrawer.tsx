@@ -1,9 +1,8 @@
-import React from 'react'
-import { drawerWidth } from '../datas/Constants'
-import { Box, Divider, Drawer, List, ListItem, ListItemButton, ListItemText, Toolbar } from '@mui/material'
-import { drawerLinks, dsTypes } from '../datas/datas';
+import React from 'react';
+import { drawerWidth } from '../datas/Constants';
+import { Box, Divider, Drawer, List, ListItem, ListItemButton, ListItemText, Toolbar } from '@mui/material';
+import { TObjData, dataObj, drawerLinks } from '../datas/datas';
 import { Link } from 'react-router-dom';
-import { toPascalCase } from '../datas/utilities';
 
 export interface IAppDrawerProps {
     setMobileOpen: React.Dispatch<React.SetStateAction<boolean>>
@@ -31,7 +30,7 @@ const AppDrawer: React.FC<IAppDrawerProps> = ({ setMobileOpen, mobileOpen, setIs
                 {drawerLinks.map((text) => (
                     <ListItem key={text} disablePadding component={Link} to={`/${text}`}>
                         <ListItemButton>
-                            <ListItemText primary={text} />
+                            <ListItemText primary={dataObj[text as TObjData]} />
                         </ListItemButton>
                     </ListItem>
                 ))}
@@ -71,6 +70,7 @@ const AppDrawer: React.FC<IAppDrawerProps> = ({ setMobileOpen, mobileOpen, setIs
             >
                 {drawer}
             </Drawer>
+            <Toolbar />
         </Box>
     )
 }

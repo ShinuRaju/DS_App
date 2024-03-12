@@ -3,8 +3,8 @@ import { TObjData, dataObj } from '../datas/datas';
 import Heading from '../components/Heading';
 import PreCodeBlock from '../components/PreCodeBlock';
 
-const Stack = () => {
-    const objType: TObjData = 'stack';
+const TreeBSTRecurrsive = () => {
+    const objType: TObjData = 'treeBSTRecurrsive';
     const title = dataObj[objType];
 
     return (
@@ -15,4 +15,4 @@ const Stack = () => {
     )
 }
 
-export default Stack
+export default TreeBSTRecurrsive

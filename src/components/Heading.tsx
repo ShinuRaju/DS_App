@@ -6,7 +6,7 @@ export interface IHeadingProps {
 }
 const Heading: React.FC<IHeadingProps> = ({ children }) => {
     return (
-        <Typography variant='h1' > {children}</Typography>
+        <Typography variant='h2' > {children}</Typography>
     )
 }
 

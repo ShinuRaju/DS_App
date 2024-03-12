@@ -1,10 +1,8 @@
-import React, { useEffect, useState } from 'react'
-import { CopyBlock } from 'react-code-blocks';
-import { customCodeBlockTheme } from '../styles';
-import { TFileName } from '../datas/datas';
+import React, { useEffect, useState } from 'react';
+import { TObjData } from '../datas/datas';
 
 export interface IPreCodeBlockProps {
-    file: TFileName
+    file: TObjData
 }
 
 const PreCodeBlock: React.FC<IPreCodeBlockProps> = ({ file }) => {
@@ -18,13 +16,19 @@ const PreCodeBlock: React.FC<IPreCodeBlockProps> = ({ file }) => {
             });
     }, []);
     return (
+        <>
+            <pre><code>{
+                text
+            }
+            </code></pre>
 
-        <CopyBlock
-            text={`${text}`}
-            language={"js"}
-            showLineNumbers={true}
-            theme={customCodeBlockTheme}
-        />
+            {/* <CopyBlock
+                text={`${text}`}
+                language={"js"}
+                showLineNumbers={true}
+                theme={customCodeBlockTheme}
+            /> */}
+        </>
 
     )
 }
